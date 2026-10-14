@@ -9,11 +9,16 @@
     echo '<p> we have ' .$quantity. ' item in the stock for ' .$price. 'rwf each</p> <br>';
     echo "<p> we have " .$quantity. " item in the stock for " .$price. "rwf each</p>";
 
-    echo '<p> the talt number is ' number_format($total) 'rwf </p>';
+    echo '<p> the talt number is ' .number_format($total). 'rwf </p>';
     echo '<p> the totol number is  number_format($total) rwf </p>';
     if($quantity>0){
         $in_stock=true;
     }
+    else{
+        $in_stock=false;
+    }
+
+
     if ($in_stock){
         echo "<p> $product is available </p>";
     }
