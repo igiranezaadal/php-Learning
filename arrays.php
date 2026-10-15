@@ -23,3 +23,18 @@
             <li style="padding: 10px;"><?= $prd; ?></li>
         <?php endforeach; ?>
     </ul>
+
+    <table border='1'>
+        <thead>
+            <th>Categories</th>
+        </thead>
+        <tbody>
+            <?php foreach ($product as  $pr):?>
+                //creating row and add data inside
+                <tr>
+                    <td><?= $pr; ?></td>
+                </tr>
+            <?php endforeach; ?>
+            
+        </tbody>
+    </table>
