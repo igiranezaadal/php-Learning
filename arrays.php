@@ -24,14 +24,14 @@
         <?php endforeach; ?>
     </ul>
 
-    <table border='1'>
+    <table border='1' style="border-collapse: collapse;">
         <thead>
             <th>Categories</th>
         </thead>
         <tbody>
             <?php foreach ($product as  $pr):?>
-                //creating row and add data inside
-                <tr>
+                <!-- creating row and add data inside -->
+                <tr style="pdding:10px; border: 1px solid blue; background: #97343452;">
                     <td><?= $pr; ?></td>
                 </tr>
             <?php endforeach; ?>
