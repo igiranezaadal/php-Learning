@@ -17,10 +17,14 @@
         </thead>
         <tbody>
             <?php foreach($cart as $line): ?>
+                <?php $lineTotal+$line['price'] * $line['quantity'];
+                $total+=$lineTotal
+                ?>
                 <tr>
                     <td> <?= print_r($line['name']) ?></td>
                     <td style="text-align: right;"> <?= number_format($line['price']) ?></td>
                     <td style="text-align: right;"> <?= number_format($line['quantity']) ?></td>
+                    <td style="text-align: right;"> <?= number_format($line['total']) ?></td>
                 </tr>
             <?php endforeach?>
             
